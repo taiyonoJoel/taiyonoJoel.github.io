@@ -486,8 +486,11 @@ plot.title = element_text(color="black", size=10, face="bold"))
 mapa
 ```
   - A partir de nuestra variable dependiente podemos observar una distribución territorial de la siguiente manera.
+
   -   Los países del sur de África como Sudáfrica, Namidia y Botswana presentan bajos niveles de desempleo juvenil. Esto se puede deber a varios factores, pero se tendría en cuenta el reciente crecimiento económico de dichos países. Algo similar ocurre con algunos países de los Balcanes, pero es debido a la ausencia de personas de mediana edad debido a las guerras que hubieron en años anteriores, lo que explica la necesidad de que los jóvenes inicien una entrada temprana al mercado laboral.
+
   -   En varios países de occidente junto con China, India y Japón hay una tasa bastante alta de desempleo juvenil. Esto se puede verse explicado en relación a 2 factores clave para los primeros 2 países y un tercero que es un factor global. El primer factor es la gran concentración de población en dichas zonas, que terminan creando poco espacio laboral para las personas nuevas que se deseen introducir a estas economías y optan por trabajar en el extranjero, como ocurre con India. El segundo factor es que debido a como la economía de dichos países está distribuida, muchas poblaciones que se encuentran en áreas rurales terminan trabajando de manera informal o no presentan un trabajo definido, por lo que quedan catalogados como desempleados de forma indirecta. El tercer factor es algo que se ve puede ver con varios países y es principalmente que se toma demasiado en cuenta la educación universitaria, a veces por encima de la propia estabilidad económica, por lo que los estudiantes universitarios, aquellos que se encuentran en el margen de estudio de la variable independiente, tienden a no trabajar para concentrarse en sus estudios y solamente tienen un empleo si es que necesitan de pagar la universidad en caso que no tengan una beca o sus padres no puedan pagarles la universidad. 
+
   -   Se puede ver también que hay varios países del centro de África y cercanos a Siberia que poseen altos niveles de desempleo juvenil. Si bien esto puede deberse a factores interiores de cada pais, tambien es probable que esto se deba a los factores ya mencionados como la importancia al estudio universitario o a un error en el proceso de clusterizacion. 
 
 
@@ -521,7 +524,7 @@ scale_fill_manual(values=c("#29211F","#65A752","#1C6AA8","#D72E3E")) + theme_voi
   
 theme(axis.title = element_blank(), axis.text = element_blank(), legend.position = c(1.1,0.55)) + labs(fill=" ") + theme(legend.text = element_text(size = 13)) +
   
-labs(title = "4 clusters",caption = "Elaboración propia. Fuente: Banco Mundial 2022. @taiyonoJoel") +
+labs(title = "4 clusters",caption = "Fuente: Banco Mundial 2022. Elaboración propia.  @luccemhu") +
   
 theme(
 plot.title = element_text(color="black", size=15, face="bold"),
@@ -531,7 +534,10 @@ mapa3
 ```
 
   -   Al separar los países por clusteres vemos como se acentúa más lo planteado de los países mencionados, especialmente con China e India al ver como son los únicos países que pertenecen a ese cluster o al menos los únicos que posean una relevancia considerable al estudio. Se ve como los factores pueden explicar dicha situacion economica y, por ende, porque se encuentran juntos en el cluster. 
+
   -   Otro Cluster que ocupa varios países de América y Europa se puede explicar con el tercer factor ya mencionado por la importancia que se le da a los estudios universitarios, por lo que el tercer factor postulado termina siendo en cierta parte un motivo bastante común para que los estudiantes no estén en una situación de empleo. 
+  
   -   De la misma manera, vemos que el cluster que conforma al sur de África y los Balcanes vuelven a confirmar que sus situaciones históricas o locales explican el motivo de su bajo nivel de desempleo juvenil en comparación con el resto de países del mundo. 
+  
   -   Por último, observamos que hay un cluster adicional que cubre África del Sahara junto con Bangladesh e Irán y Etiopía. Este cluster se puede ver como está mejor definido una vez que lo comparamos con el mapa sin clusterisar, es mucho más visible que este se concentra en áreas donde hubo o hay conflictos internos como las guerrillas en centroáfrica o los conflictos religiosos que persisten en Bangladesh (entre el islam y el hinduismo). 
   
